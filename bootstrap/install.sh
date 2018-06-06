@@ -1,7 +1,12 @@
 #!/bin/bash
 
 echo "--------------------------------------"
-echo "==>  Installing Brew"
+echo "==>  Updating Brew"
+echo "--------------------------------------"
+brew update && brew upgrade && brew doctor
+
+echo "--------------------------------------"
+echo "==>  Installing Brew Apps"
 echo "--------------------------------------"
 cd ~/dotfiles/bootstrap && brew bundle
 

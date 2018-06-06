@@ -1,0 +1,11 @@
+[user]
+	name = Zoe Aubert
+	email = hello@zoeaubert.me
+[core]
+	quotepath = false
+	autocrlf = input
+	editor = vim
+[mergetool]
+	keepBackup = true
+[color]
+	ui = true

@@ -1,0 +1,15 @@
+# Misc Aliases
+
+alias reload_profile="source ~/.profile"
+
+# Easier navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias bk="cd -"
+alias hm="cd ~"
+
+# Vagrant
+alias vu="vagrant up"
+alias vd="vagrant halt"
+alias vs="vagrant ssh"
+alias vr="vagrant halt && vagrant up && vagrant ssh"

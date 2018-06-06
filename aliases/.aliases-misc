@@ -13,3 +13,6 @@ alias vu="vagrant up"
 alias vd="vagrant halt"
 alias vs="vagrant ssh"
 alias vr="vagrant halt && vagrant up && vagrant ssh"
+
+# Hosts
+alias hosts="sudo nano /etc/hosts"

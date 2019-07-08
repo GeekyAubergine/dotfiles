@@ -14,5 +14,14 @@ alias vd="vagrant halt"
 alias vs="vagrant ssh"
 alias vr="vagrant halt && vagrant up && vagrant ssh"
 
+# Postgres
+alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+
 # Hosts
 alias hosts="sudo nano /etc/hosts"
+
+# jenv
+#export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
+#alias jenv_set_java_home='export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"'
+

@@ -10,6 +10,9 @@ echo "==>  Installing Brew Apps"
 echo "--------------------------------------"
 cd ~/dotfiles/bootstrap && brew bundle
 
+brew install postgresql
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+
 echo ""
 echo "--------------------------------------"
 echo "==>  Linking Configs"

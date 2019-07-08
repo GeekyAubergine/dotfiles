@@ -3,7 +3,8 @@ tap 'caskroom/cask'
 brew 'git'
 brew 'yarn'
 brew 'thefuck'
-brew 'nvm'
+brew 'composer'
+brew 'gradle'
 
 # General
 cask 'dropbox'

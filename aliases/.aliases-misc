@@ -1,6 +1,7 @@
 # Misc Aliases
 
 alias reload_profile="source ~/.profile"
+eval "$(thefuck --alias)"
 
 # Easier navigation
 alias ..="cd .."

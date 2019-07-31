@@ -1,2 +1,5 @@
 # dotfiles
-Home is where the code is
+🎶  
+Country codes, take me `~/`  
+Put the scripts, where they belong  
+🎶

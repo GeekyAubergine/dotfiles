@@ -4,8 +4,8 @@ export NVM_DIR=~/.nvm
 . $(brew --prefix nvm)/nvm.sh
 
 # Aliases
-source ~/dotfiles/aliases/.aliases-misc
-source ~/dotfiles/aliases/.aliases-git
+source ~/dotfiles/aliases/misc.zsh
+source ~/dotfiles/aliases/git.zsh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

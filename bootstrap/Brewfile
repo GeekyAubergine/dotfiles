@@ -1,16 +1,16 @@
 tap 'caskroom/cask'
 
-brew 'git'
-brew 'yarn'
-brew 'thefuck'
-brew 'composer'
-brew 'gradle'
-
 # General
 cask 'dropbox'
 cask 'spotify'
 
 # Developer
+brew 'git'
+brew 'thefuck'
+brew 'yarn'
+brew 'composer'
+brew 'gradle'
+brew 'nvm'
 cask 'iterm2'
 cask 'vagrant'
 cask 'docker'

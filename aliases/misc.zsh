@@ -1,6 +1,6 @@
 # Misc Aliases
 
-alias reload_profile="source ~/.profile"
+alias reload='. ~/.zshrc'
 eval "$(thefuck --alias)"
 
 # Easier navigation
@@ -21,6 +21,9 @@ alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.
 
 # Hosts
 alias hosts="sudo nano /etc/hosts"
+
+# Utils
+alias uuid="uuidgen | tr -d '\n' | tr '[:upper:]' '[:lower:]' | pbcopy && pbpaste && echo"
 
 # jenv
 #export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"

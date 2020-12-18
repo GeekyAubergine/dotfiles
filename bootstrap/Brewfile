@@ -1,4 +1,5 @@
 tap 'caskroom/cask'
+tap 'adoptopenjdk/openjdk'
 
 # General
 cask 'dropbox'
@@ -19,3 +20,6 @@ cask 'gitify'
 cask 'ngrok'
 cask 'slack'
 cask 'sequel-pro'
+brew 'jenv'
+brew 'rbenv'
+cask 'java'

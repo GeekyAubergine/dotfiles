@@ -11,6 +11,12 @@ echo "--------------------------------------"
 cd ~/dotfiles/bootstrap && brew bundle
 
 echo "--------------------------------------"
+echo "==>  Configuring Brew Apps"
+echo "--------------------------------------"
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(jenv init -)"' >> ~/.zshrc
+
+echo "--------------------------------------"
 echo "==>  Installing Postgres"
 echo "--------------------------------------"
 brew install postgresql

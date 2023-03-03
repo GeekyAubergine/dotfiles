@@ -5,6 +5,7 @@
 	quotepath = false
 	autocrlf = input
 	editor = vim
+	excludesfile = /Users/zoe/.gitignore
 [mergetool]
 	keepBackup = true
 [color]

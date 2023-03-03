@@ -1,5 +1,7 @@
 # Config
 
+eval $(thefuck --alias)
+
 export NVM_DIR=~/.nvm
 . $(brew --prefix nvm)/nvm.sh
 
@@ -16,6 +18,11 @@ eval "$(jenv init -)"
 
 eval "$(rbenv init -)"
 
+eval "$(pyenv init -)"
+
+
 # Android Stuff
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
+
+[ -f "/Users/zoe/.ghcup/env" ] && source "/Users/zoe/.ghcup/env" # ghcup-env

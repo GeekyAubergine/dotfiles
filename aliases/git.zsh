@@ -32,5 +32,8 @@ alias gm="git merge --no-ff"
 alias gd='git diff' # | subl -n
 alias gdc='git diff --cached' # | subl -n
 alias gl="git log --graph --pretty=format':%C(red)%h%Cgreen%d%Creset %s %C(blue) %an, %ar%Creset'"
-alias gup='git fetch origin && git pull' # gup instead of gpl
-alias gps='git push origin HEAD:$(git_current_branch)'
+alias grb="git rebase -p"
+alias gup='git pull'
+alias gps='git push origin HEAD'
+alias gro='git rebase origin'
+

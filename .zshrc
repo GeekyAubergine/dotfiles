@@ -1,5 +1,18 @@
 # Config
 
+autoload -U colors && colors
+
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '%b'
+
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+PROMPT='${PWD/#$HOME/~} %{$fg[green]%}${vcs_info_msg_0_}%{$reset_color%} >'
+
 eval $(thefuck --alias)
 
 export NVM_DIR=~/.nvm
@@ -16,13 +29,11 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
-eval "$(rbenv init -)"
-
 eval "$(pyenv init -)"
-
 
 # Android Stuff
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
 
-[ -f "/Users/zoe/.ghcup/env" ] && source "/Users/zoe/.ghcup/env" # ghcup-env
+[ -f "/Users/zoe/.ghcup/env" ] && source "/Users/zoe/.ghcup/env" # ghcup-envexport PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"
